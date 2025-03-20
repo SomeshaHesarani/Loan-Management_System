@@ -1,0 +1,38 @@
+.edit-loan-application-page {
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.edit-loan-application-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.edit-loan-application-form label {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+.edit-loan-application-form input,
+.edit-loan-application-form select,
+.edit-loan-application-form button {
+    padding: 10px;
+    font-size: 14px;
+}
+
+.edit-loan-application-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.edit-loan-application-form button:hover {
+    background-color: #0056b3;
+}

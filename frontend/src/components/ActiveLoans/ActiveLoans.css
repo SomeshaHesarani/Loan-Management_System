@@ -1,0 +1,111 @@
+/* ActiveLoans.css */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 250px; /* Adjust based on sidebar width */
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .loanApplication-page {
+    margin-top: 20px;
+  }
+  
+  .loanApplication-header {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: flex-start;
+  }
+  
+  .filters input,
+  .filters select {
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .filters input {
+    width: 300px;
+  }
+  
+  .filters select {
+    width: 200px;
+  }
+  
+  .loanApplication-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .loanApplication-table th,
+  .loanApplication-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  .loanApplication-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+  
+  .loanApplication-table td {
+    background-color: #fff;
+  }
+  
+  .loanApplication-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .loanApplication-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .loanApplication-table button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .loanApplication-table button:hover {
+    background-color: #0056b3;
+  }
+  
+  .loanApplication-table td button {
+    font-size: 14px;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .loanApplication-table th, .loanApplication-table td {
+      padding: 10px 12px;
+    }
+  
+    .filters input,
+    .filters select {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .filters {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  

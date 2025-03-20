@@ -1,0 +1,138 @@
+/* LoanApplications.css */
+
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+  }
+  
+  .loanApplication-page {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .loanApplication-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .loanApplication-header h2 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .add-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .add-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .search-input {
+    width: 300px;
+    padding: 8px;
+    margin-right: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+  }
+  
+  .center-filter {
+    padding: 8px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .loanApplication-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .loanApplication-table th,
+  .loanApplication-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .loanApplication-table th {
+    background-color: #f4f4f4;
+  }
+  
+  .loanApplication-table td {
+    background-color: #fff;
+  }
+  
+  .loanApplication-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .loanApplication-table td button {
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .loanApplication-table td button:hover {
+    background-color: #0056b3;
+  }
+  
+  .loanApplication-table td select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+  }
+  
+  .loanApplication-table td select:focus {
+    outline-color: #007bff;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .main-content {
+      margin-left: 0;
+    }
+  
+    .loanApplication-page {
+      padding: 10px;
+    }
+  
+    .loanApplication-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .add-btn {
+      margin-top: 10px;
+    }
+  
+    .search-input {
+      width: 100%;
+      margin-right: 0;
+    }
+  
+    .center-filter {
+      width: 100%;
+    }
+  
+    .loanApplication-table th,
+    .loanApplication-table td {
+      padding: 8px;
+    }
+  }
+  

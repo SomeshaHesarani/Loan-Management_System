@@ -1,0 +1,56 @@
+/* General container styles */
+.container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Dropdown container */
+.dropdown-container {
+  margin-bottom: 20px;
+}
+
+.loan-type-dropdown label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.loan-type-dropdown select {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+/* Table styles */
+.table-container {
+  margin-top: 20px;
+}
+
+.loan-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.loan-table th,
+.loan-table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.loan-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.loan-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.loan-table tr:hover {
+  background-color: #f1f1f1;
+}

@@ -1,0 +1,87 @@
+.add-newapplication-page {
+    padding: 20px;
+    font-family: "Arial", sans-serif;
+    background-color: #f4f4f4;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .newapplication-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .form-section {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 5px;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .input-field:focus {
+    border-color: #4caf50;
+    outline: none;
+  }
+  
+  .form-buttons {
+    display: flex; /* Use flexbox for layout */
+    justify-content: flex-end; /* Align buttons to the right */
+    gap: 10px; /* Add spacing between buttons */
+    margin-top: 20px; /* Add some space above the buttons */
+  }
+  
+  .submit-btn,
+  .cancel-btn {
+    padding: 10px 20px; /* Button size */
+    font-size: 16px; /* Font size */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    border: none; /* Remove default button borders */
+  }
+  
+  .submit-btn {
+    background-color: #4caf50; /* Green background for Save */
+    color: white; /* White text */
+  }
+  
+  .submit-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  
+  .cancel-btn {
+    background-color: #f44336; /* Red background for Back */
+    color: white; /* White text */
+  }
+  
+  .cancel-btn:hover {
+    background-color: #e53935; /* Darker red on hover */
+  }
+  

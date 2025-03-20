@@ -1,0 +1,174 @@
+/* RepaymentPage.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  .main-content {
+    margin-left: 240px; /* Space for sidebar */
+    padding: 20px;
+  }
+  
+  .repayment-page {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .repayment-page h2 {
+    margin-top: 0;
+    color: #333;
+    text-align: center;
+  }
+  
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+  }
+  
+  .filters label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  .filters select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 200px;
+  }
+  
+  .loans-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .loans-table th,
+  .loans-table td {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  .loans-table th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .loans-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .loans-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  button {
+    padding: 8px 12px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .payments-section {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+  }
+  
+  .payments-section h3 {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  .payments-section input[type="number"],
+  .payments-section select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .payments-section button {
+    margin-right: 10px;
+  }
+  
+  .checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .checkbox input {
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+  
+  .bulk-payment-section {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+  }
+  
+  .bulk-payment-section h3 {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  .bulk-payment-section input,
+  .bulk-payment-section select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .bulk-payment-section button {
+    margin-right: 10px;
+  }
+  
+  .alert {
+    color: red;
+    font-weight: bold;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .filters {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .filters select {
+      max-width: 100%;
+    }
+  
+    .main-content {
+      margin-left: 0;
+      padding: 10px;
+    }
+  }
+  

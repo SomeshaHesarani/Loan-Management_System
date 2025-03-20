@@ -1,0 +1,145 @@
+.sidebar {
+  width: 280px;
+  height: 100vh;
+  background: linear-gradient(180deg, #2c3e50 0%, #3498db 100%);
+  color: white;
+  transition: all 0.3s ease;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+  overflow-y: auto;
+}
+
+.sidebar.closed {
+  width: 80px;
+}
+
+.logo-content {
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.logo-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid rgba(255,255,255,0.2);
+  transition: all 0.3s ease;
+}
+
+.sidebar.closed .logo-photo {
+  width: 40px;
+  height: 40px;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.menu-item {
+  margin: 8px 0;
+}
+
+.menu-link {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.menu-link:hover {
+  background: rgba(255,255,255,0.1);
+  transform: translateX(5px);
+}
+
+.menu-icon {
+  font-size: 1.2rem;
+  margin-right: 15px;
+  min-width: 20px;
+}
+
+.dropdown {
+  cursor: pointer;
+  padding: 12px 20px;
+  transition: all 0.3s ease;
+}
+
+.dropdown:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.dropdown-arrow {
+  margin-left: auto;
+  font-size: 0.8rem;
+}
+
+.dropdown-menu {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 20px;
+  background: rgba(0,0,0,0.2);
+  border-radius: 4px;
+}
+
+.dropdown-menu li a {
+  padding: 10px 15px;
+  display: block;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.dropdown-menu li a:hover {
+  background: rgba(255,255,255,0.1);
+}
+
+/* Animations */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.menu-item {
+  animation: slideIn 0.3s ease forwards;
+}
+
+/* Scrollbar Styling */
+.sidebar::-webkit-scrollbar {
+  width: 5px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: rgba(255,255,255,0.1);
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.2);
+  border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 240px;
+  }
+  
+  .sidebar.closed {
+    width: 0;
+    padding: 0;
+  }
+}

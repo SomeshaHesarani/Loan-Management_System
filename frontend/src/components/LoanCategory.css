@@ -1,0 +1,146 @@
+/* LoanCategory.css */
+
+/* General styling for the form container */
+.form-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styling */
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Table styling */
+.loan-category-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.loan-category-table th,
+.loan-category-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.loan-category-table th {
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+}
+
+.loan-category-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Loan type selection */
+.loan-type-selection {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.loan-type-selection .form-label {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.loan-type-selection .form-select {
+  padding: 8px;
+  margin-top: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Form styling */
+.loan-form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.loan-form .form-title {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.loan-form .form-label {
+  display: block;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.loan-form .form-input,
+.loan-form .form-select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Buttons */
+.calculate-btn,
+.submit-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.calculate-btn:hover,
+.submit-btn:hover {
+  background-color: #45a049;
+}
+
+.submit-btn.disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Display for amounts */
+.total-amount,
+.daily-interest {
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.total-amount .amount,
+.daily-interest .amount {
+  color: #4caf50;
+}
+
+/* Footer styling */
+footer {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 12px;
+  color: #888;
+}
+
+footer p {
+  margin: 0;
+}

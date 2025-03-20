@@ -1,0 +1,238 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+    padding: 20px;
+    box-sizing: border-box;
+    
+   
+}
+
+  
+  .login-frame {
+    width: 100%;
+    max-width: 1200px;
+    background: white;
+    border-radius: 30px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    animation: frameEntrance 0.6s ease-out;
+    border: 3px solid #13111a;
+  }
+  
+  .form-section {
+    padding: 50px;
+    background: white;
+  }
+  
+  .form-section h1 {
+    font-size: 36px;
+    color: #1a365d;
+    margin-bottom: 10px;
+    font-weight: 800;
+    animation: slideUp 0.5s ease-out;
+  }
+  
+  .form-section p {
+    color: #64748b;
+    font-size: 16px;
+    margin-bottom: 40px;
+    animation: slideUp 0.5s ease-out 0.1s;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 16px 20px;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background: #f8fafc;
+  }
+  
+  .input-group input:focus {
+    border-color: #3b82f6;
+    background: white;
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.15);
+    outline: none;
+  }
+  
+  .remember-me {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 5px 0;
+  }
+  
+  .remember-me input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    accent-color: #3b82f6;
+    cursor: pointer;
+  }
+  
+  .remember-me label {
+    color: #64748b;
+    font-size: 15px;
+    user-select: none;
+    cursor: pointer;
+  }
+  
+  .btn-login {
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+    color: white;
+    padding: 16px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(37, 99, 235, 0.2);
+  }
+  
+  .btn-login:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 12px rgba(37, 99, 235, 0.25);
+  }
+  
+  .btn-login:active:not(:disabled) {
+    transform: translateY(0);
+  }
+  
+  .btn-login:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+  
+  .image-section {
+    position: relative;
+    background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+    overflow: hidden;
+  }
+  
+  .overlay-box {
+    position: absolute;
+    inset: 0;
+     background: linear-gradient(180deg, #2c3e50 0%, #3498db 100%);
+    backdrop-filter: blur(5px);
+  }
+  
+  .image-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .logo {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 20px;
+    background: white;
+    padding: 15px;
+    margin-bottom: 25px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+    background: linear-gradient(180deg, #2c3e50 0%, #3498db 100%);
+  }
+  
+  .logo:hover {
+    transform: scale(1.05);
+  }
+  
+  .image-content h2 {
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .main-image {
+    max-width: 50%;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    border:#000000 ;
+    transition: transform 0.3s ease;
+  }
+  
+  .main-image:hover {
+    transform: translateY(-5px);
+  }
+/* Footer Styles */
+footer {
+    margin-top: 2.5rem; /* 10 in Tailwind's spacing scale */
+    text-align: center;
+    color: #1f2c47; /* Equivalent to Tailwind's text-gray-500 */
+    font-size: 15px; /* Equivalent to Tailwind's text-sm */
+  }
+  
+  footer p {
+    margin: 300px;
+    padding: 0.5rem 0;
+    font-weight: 500; /* Medium font weight */
+    line-height: 1.5;
+  }
+  
+  @keyframes frameEntrance {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .login-frame {
+      grid-template-columns: 1fr;
+    }
+    
+    .image-section {
+      display: none;
+    }
+    
+    .form-section {
+      padding: 30px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .form-section {
+      padding: 20px;
+    }
+    
+    .form-section h1 {
+      font-size: 28px;
+    }
+  }
